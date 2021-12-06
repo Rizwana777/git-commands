@@ -1,7 +1,7 @@
 # git-github
 
 git commands
-*git status
+* git status
 *git add .
 *git commit -m "message"
 *git commit --amend
