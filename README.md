@@ -27,10 +27,13 @@ git push origin <branch_for_cherry_pick>
 Raise a PR
 
 ## How to add --signoff for old commits if missed:
+
 To signoff previous commit, use ammend:
+
 git commit --amend --signoff
 
 To signoff any old commit:
+
 git rebase -i -x “git commit --amend --no-edit --signoff” HEAD~n
 
 
