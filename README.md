@@ -1,6 +1,5 @@
-# git-github
+# git commands
 
-git commands
 * git status
 * git add .
 * git commit -m "message"
@@ -12,7 +11,7 @@ git commands
 * git rebase <branch_name>
 
 
-## How to cherry-pick from upstream branch:
+### How to cherry-pick from upstream branch:
 
 git checkout -b <branch_for_cherry_pick> upstream/<upstream_branchname_where_we_need_to_cherry_pick>
 
@@ -26,7 +25,7 @@ git push origin <branch_for_cherry_pick>
 
 Raise a PR
 
-## How to add --signoff for old commits if missed:
+### How to add --signoff for old commits if missed:
 
 To signoff previous commit, use ammend:
 
