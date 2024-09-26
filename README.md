@@ -12,7 +12,7 @@ git commands
 * git rebase <branch_name>
 
 
-How to cherry-pick from upstream branch:
+## How to cherry-pick from upstream branch:
 
 git checkout -b <branch_for_cherry_pick> upstream/<upstream_branchname_where_we_need_to_cherry_pick>
 
@@ -25,3 +25,17 @@ git commit
 git push origin <branch_for_cherry_pick>
 
 Raise a PR
+
+## How to add --signoff for old commits if missed:
+To signoff previous commit, use ammend:
+git commit --amend --signoff
+
+To signoff any old commit:
+git rebase -i -x “git commit --amend --no-edit --signoff” HEAD~n
+
+
+
+
+
+
+
