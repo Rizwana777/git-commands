@@ -10,3 +10,13 @@ git commands
 * git pull origin <branch_name>
 * git push origin <branch_name>
 * git rebase <branch_name>
+
+
+How to cherry-pick from upstream branch
+
+git checkout -b <branch_for_cherry_pick> upstream/branchname
+git cherry-pick <commit_id> 
+git add .
+git commit 
+git push origin <branch_for_cherry_pick>
+Raise a PR
