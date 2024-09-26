@@ -14,7 +14,7 @@ git commands
 
 How to cherry-pick from upstream branch
 
-git checkout -b <branch_for_cherry_pick> upstream/branchname
+git checkout -b <branch_for_cherry_pick> upstream/<upstream_branchname_where_we_need_to_cherry_pick>
 git cherry-pick <commit_id> 
 git add .
 git commit 
